@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1.git 使用前需要配置提交人的信息
+        // 配置提交人姓名 git config --global user.name 提交人姓名
+        // 配置提交人邮箱 git config --global user.email 提交人邮箱
+        // 查看git配置信息 git config --list
+        // 【注意】如果要对配置信息进行修改，重复上述操作即可，覆盖掉之前的信息
+
+        // 2.git 提交步骤
+        // git init                   初始化git仓库
+        // git status                 查看文件状态
+        // git add 文件名              追踪文件，将文件提交的暂存区中
+        // git commit -m 提交说明      将文件提交到git仓库中，提交说明必须要写
+        // git log                    查看提交记录
+        // 3.撤销
+        // git checkout 文件名         用暂存区的文件覆盖工作目录中的文件
+        // git rm --cached            将文件从暂存区中删除
+        // git rest --hard commitID   将git仓库中的文件恢复出来，会覆盖暂存区和工作目录的文件
+
+        // 4.分支命令
+        // git branch            查看分支
+        // git branch  新分支名   创建新的分支
+        // git checkout 分支名    切换分支 ，要在暂存区干净状态切换分支，不然文件会被带到其他分支
+        // git merge 来源分支     合并分支，此时一定要处在合并到的分支上    
+        // git branch -d 分支名   删除分支（只有分支被合并之后才允许被删除），如果不想合并强制删除使用-D
+
+        // 5.暂时保存更改
+        // git stash  将文件暂时保存，以保持暂存区干净去处理其他分支，这是在不想提交到仓库就切换分支时的办法
+        // git stash pop 恢复改动
+    </script>
+</body>
+
+</html>
